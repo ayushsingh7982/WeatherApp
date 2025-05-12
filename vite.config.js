@@ -5,12 +5,12 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   server: {
-    host: '0.0.0.0',       // Allow access from any host
-    port: 10000,           // Use the port required by Render
+    host: '0.0.0.0',
+    port: 10000,
   },
   preview: {
-    host: '0.0.0.0',       // Allow preview from any host
+    host: '0.0.0.0',
     port: 10000,
-    allowedHosts: ['.'],   // Allow all hosts
+    allowedHosts: ['weatherapp-wv8f.onrender.com'], // Add your Render URL here
   },
 });
