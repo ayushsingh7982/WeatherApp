@@ -1,0 +1,113 @@
+.InfoBox {
+    max-width: 500px;
+    margin: 2rem auto;
+    transition: all 0.3s ease;
+}
+
+.cardContainer {
+    padding: 1rem;
+}
+
+.weatherCard {
+    border-radius: 12px !important;
+    overflow: hidden;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.weatherCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
+}
+
+.weatherIcon {
+    margin-left: 10px;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+.sunny {
+    color: #FFD700; /* Bright yellow */
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 2px 4px rgba(255,215,0,0.3));
+}
+
+.cloudy {
+    color: #A9A9A9; /* Dark gray */
+    background: linear-gradient(135deg, #A9A9A9, #D3D3D3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.rainy {
+    color: #1E90FF; /* Dodger blue */
+    background: linear-gradient(135deg, #1E90FF, #00BFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 2px 4px rgba(30,144,255,0.3));
+}
+
+.drizzle {
+    color: #87CEEB; /* Sky blue */
+    background: linear-gradient(135deg, #87CEEB, #ADD8E6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.storm {
+    color: #9400D3; /* Dark violet */
+    background: linear-gradient(135deg, #9400D3, #4B0082);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 2px 4px rgba(148,0,211,0.3));
+}
+
+.snowy {
+    color: #00BFFF; /* Deep sky blue */
+    background: linear-gradient(135deg, #00BFFF, #E0FFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.misty {
+    color: #778899; /* Light slate gray */
+    background: linear-gradient(135deg, #778899, #B0C4DE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.windy {
+    color: #4682B4; /* Steel blue */
+    background: linear-gradient(135deg, #4682B4, #B0E0E6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Add animation to icons */
+.weatherIcon:hover {
+    transform: scale(1.1) rotate(5deg);
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+}
+
+.MuiTypography-h5 {
+    font-weight: 700 !important;
+    margin-bottom: 1rem !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MuiTypography-body2 p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #424242;
+}
+
+.MuiTypography-body2 p:first-child {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #3f51b5;
+}
